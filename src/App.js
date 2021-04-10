@@ -1,6 +1,6 @@
 import './App.css';
 
-function MyApp() {
+function App() {
     return (
         <div>
             <h1>Hello, friends! This is my first time using React!</h1>
@@ -8,4 +8,4 @@ function MyApp() {
     );
 }
 
-export default MyApp;
+export default App;
