@@ -47,7 +47,33 @@ ReactDOM.render(app, document.querySelector('#root'));
 
 This component returns the code we want to render to the DOM using a special syntax called JSX (JavaScript Syntax Extension).
 
-As I was learning about React components, I immediately made the connection with JSPs (Java Server Pages) and Thymeleaf because they each allow you to dynamically pass data to the HTML page for the user to see. The syntax is also very similar.
+As I was learning about React components, I immediately made the connection with JSPs (Java Server Pages) and Thymeleaf because they each allow you to dynamically pass data to the HTML page for the user to see. The syntax also looks very similar.
+
+JSP Syntax
+```html
+<% request.setAttribute("message", "Hello, World!"); %>
+        ...
+<h1>Here is the message: ${message}</h1>
+```
+
+Thymeleaf Syntax
+```java
+//HelloNameController.java
+@Controller
+public class HelloNameController {
+    
+  @GetMapping("/hello/{name}")
+  public String sayHello(@PathVariable String name, Model model) {
+      model.addAttribute("name", name);
+      return "hello-name";
+  }
+}
+```
+
+```html
+<!--hello-name.html-->
+<h1>Hello, <span th:text="${name}">World</span>!</h1>
+```
 
 ### Continued Development
 
