@@ -57,6 +57,11 @@ JSP Syntax
 ```
 
 Thymeleaf Syntax
+```html
+<!--hello-name.html-->
+<h1>Hello, <span th:text="${name}">World</span>!</h1>
+```
+
 ```java
 //HelloNameController.java
 @Controller
@@ -68,11 +73,6 @@ public class HelloNameController {
       return "hello-name";
   }
 }
-```
-
-```html
-<!--hello-name.html-->
-<h1>Hello, <span th:text="${name}">World</span>!</h1>
 ```
 
 ### Continued Development
