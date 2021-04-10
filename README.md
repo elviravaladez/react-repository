@@ -6,6 +6,7 @@ This is a repository to document my progress learning React.
 
 - [Overview](#overview)
     - [The Objective](#the-objective)
+    - [Topics](#topics)
 - [My Process](#my-process)
     - [What I Learned](#what-i-learned)
     - [Continued Development](#continued-development)
@@ -16,6 +17,19 @@ This is a repository to document my progress learning React.
 ### The Objective
 
 Be able to dive in and learn React.js, Hooks, Redux, React Routing, Animations, Next.js, and more.
+
+### Topics
+* React Basics
+* Debugging
+* Components
+* Styling Components
+* HTTP Requests
+* Routing
+* Forms & Validation
+* Redux
+* Authentication
+* Testing (intro)
+* Deployment
 
 ## My Process
 
