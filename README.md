@@ -21,7 +21,20 @@ Be able to dive in and learn React.js, Hooks, Redux, React Routing, Animations, 
 
 ### What I Learned
 
-#### 4/10/21
+---
+
+#### Reasons to Use React
+1. Makes it easier to manage the UI state of an application
+2. Large focus on business logic
+3. Has a large ecosystem, active community, and high performance
+
+#### Applications You Can Build with React
+* Single Page
+  * Content is re-rendered on Client
+* Multi-page Page
+  * Content is rendered on Server
+
+#### Components
 
 Today I learned how to set up a React Application in IntelliJ and learned how to create components using React.
 
