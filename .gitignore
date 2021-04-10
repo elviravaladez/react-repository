@@ -25,4 +25,5 @@ yarn-error.log*
 # Log Files
 *.log
 
-.idea/
+.idea/*
+*.iml
