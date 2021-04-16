@@ -108,7 +108,39 @@ Today I learned that components in React are great because:
 * Separation of Concerns
 * Allows you to splits large chunks of code into multiple smaller functions 
 
-I also learned that React uses a declarative approach for building componenets.
+I also learned that React uses a declarative approach for building components.
+
+The recommendation is to have one file for one component.
+
+When creating a new component file, it is best-practice to follow the following naming convention: NewComponent.js
+
+In React, you can only have one root element per return statement (per JSX code snippet).
+
+EXAMPLE:
+
+Invalid 🚫
+
+```js
+function InvalidCode() {
+  return <div>Div One</div><div><h1>Div Two</h1><div>Inner Div</div></div>
+}
+```
+
+Valid ✅
+```js
+function ValidCode() {
+  return (
+          <div>
+            <div>Div One</div>
+            <div>
+              <h2>Div Two</h2>
+              <div>Inner Div</div>
+            </div>
+          </div>
+  );
+}
+```
+
 
 ### Continued Development
 
