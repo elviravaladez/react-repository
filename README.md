@@ -102,6 +102,14 @@ public class HelloNameController {
 }
 ```
 
+#### React & Components
+Today I learned that components in React are great because:
+* They offer re-usability
+* Separation of Concerns
+* Allows you to splits large chunks of code into multiple smaller functions 
+
+I also learned that React uses a declarative approach for building componenets.
+
 ### Continued Development
 
 This section will outline areas that I want to continue focusing on in future projects.
