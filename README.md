@@ -141,6 +141,63 @@ function ValidCode() {
 }
 ```
 
+#### Composition ("children props")
+Composition refers to building a user interface from smaller building blocks.
+
+Today I learned how to use children props to create a component that serves as a shell around other content. In the
+`Expenses.js` example below, the `<Card></Card>` acts as the shell around other content.
+
+```js
+//Expenses.js
+import './Expenses.css';
+import ExpenseItem from "./ExpenseItem";
+import Card from "./Card";
+
+function Expenses(props) {
+  return (
+          <Card className="expenses">
+            <ExpenseItem
+                    title={props.items[0].title}
+                    amount={props.items[0].amount}
+                    date={props.items[0].date}
+            />
+            <ExpenseItem
+                    title={props.items[1].title}
+                    amount={props.items[1].amount}
+                    date={props.items[1].date}
+            />
+            <ExpenseItem
+                    title={props.items[2].title}
+                    amount={props.items[2].amount}
+                    date={props.items[2].date}
+            />
+            <ExpenseItem
+                    title={props.items[3].title}
+                    amount={props.items[3].amount}
+                    date={props.items[3].date}
+            />
+          </Card>
+  );
+}
+
+export default Expenses;
+
+```
+
+I also learned how to use children props to pass content between the opening and closing tags of a component. An example of this can be seen in the `Card.js` code block below.
+
+```js
+//Card.js
+import './Card.css';
+
+function Card(props) {
+    const classes = "card " + props.className;
+    return <div className={classes}>{props.children}</div>;
+}
+
+export default Card;
+```
+
 
 ### Continued Development
 
