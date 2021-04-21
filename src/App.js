@@ -1,5 +1,6 @@
 import './App.css';
 import Expenses from "./components/Expenses";
+import React from "react";
 
 function App(props) {
     const expenses = [
@@ -27,6 +28,19 @@ function App(props) {
             date: new Date(2021, 5, 12),
         },
     ];
+
+    // //What the code looks like without the JSX code
+    // return React.createElement(
+    //     'div',
+    //     {},
+    //     React.createElement('h2', {}, "Let's get started!"),
+    //     React.createElement(Expenses, {items: expenses})
+    // );
+    //
+    // //React.createElement() takes three arguments
+    // //1: Element which should be created. Ex: div
+    // //2: Object that configures this element. Sets all the attributes of this element.
+    // //3: Content between the opening and closing div tags
 
     return (
         <div>
