@@ -203,7 +203,7 @@ In the past, developers were required to import React in all React component fil
 ```js
 //js file
 import React from 'react';
-//code here
+//remainder of code here
 ```
 
 ### Continued Development
