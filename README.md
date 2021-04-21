@@ -198,6 +198,13 @@ function Card(props) {
 export default Card;
 ```
 
+In the past, developers were required to import React in all React component files.(In all files where JSX was being used.) In the past, the import was needed because the JSX is syntactic sugar. Under the hood, JSX code is transformed to methods that call on the React object.
+
+```js
+//js file
+import React from 'react';
+//code here
+```
 
 ### Continued Development
 
