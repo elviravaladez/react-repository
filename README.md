@@ -42,6 +42,10 @@ Be able to dive in and learn React.js, Hooks, Redux, React Routing, Animations, 
 2. Large focus on business logic
 3. Has a large ecosystem, active community, and high performance
 
+#### *NOTE: In React, we write declarative code. It generally expresses logic. It abstracts away the control flow. 
+
+#### Declarative = calling on a function that contains the "under the hood" code needed to make the action you want to do possible.
+
 #### Applications You Can Build with React
 * Single Page
   * Content is re-rendered on Client
