@@ -208,6 +208,35 @@ In the past, developers were required to import React in all React component fil
 import React from 'react';
 ```
 
+#### State
+By default, regular variables in component functions do not cause the function to re-evaluate. To have a component function to re-evaluate/run again, you need to import the following:
+
+```js
+import React, { nameOfReactHookFromReactLibrary } from 'react';
+```
+ 
+#### Hooks
+React hooks start with ```use```
+
+Example:
+
+```js
+import React, { useState } from 'react';
+```
+
+Hooks are functions provided by the React Library. To use hooks, you call the hook inside the component function. They SHOULD NOT be called in NESTED functions within a component function.
+```js
+import React, { useState } from 'react';
+
+const HelloExample = (props) => {
+    
+    useState();
+    //code continues here
+}
+
+```
+
+
 ### Continued Development
 
 This section will outline areas that I want to continue focusing on in future projects.
