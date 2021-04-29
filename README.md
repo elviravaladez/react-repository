@@ -382,6 +382,70 @@ const ExpenseItem = props => {
 export default ExpenseItem;
 ```
 
+#### Listening to User Input
+
+By default, whenever you listen to the change event for an input, if you read the value of that input element, it will ALWAYS be a string. Because of this, you will initialize all states with a string in the example below:
+```js
+//Example of Using Multiple States per Component
+const [enteredTitle, setEnteredTitle] = useState('');
+const[enteredAmount, setEnteredAmount] = useState('');
+const[enteredDate, setEnteredDate] = useState('');
+//Reminder: By default, whenever you listen to the change event for an input, if you read the value of that input element, it will ALWAYS be a string
+
+const titleChangeHandler = (event) => {
+    setEnteredTitle(event.target.value);
+};
+
+const amountChangeHandler = (event) => {
+    setEnteredAmount(event.target.value);
+};
+
+const dateChangeHandler = (event) => {
+    setEnteredDate(event.target.value);
+};
+```
+
+Note: It's okay to have multiple states per component.
+
+#### Using One State Instead of Multiple
+
+```js
+//Example of Using One State
+const [userInput, setUserInput] = useState({
+  enteredTitle: '',
+  enteredAmount: '',
+  enteredDate: ''
+});
+
+const titleChangeHandler = (event) => {
+    setUserInput((prevState) => {
+    return {...prevState, enteredTitle: event.target.value};
+  });
+};
+
+const amountChangeHandler = (event) => {
+    setUserInput((prevState) => {
+    return {...prevState, enteredAmount: event.target.value};
+  });
+};
+
+const dateChangeHandler = (event) => {
+    setUserInput((prevState) => {
+    return {...prevState, enteredDate: event.target.value};
+  });
+};
+```
+
+Whenever you update state, and it depends on the previous state you should use syntax below because it assures you are getting the most up to date previous state:
+
+```js
+const titleChangeHandler = (event) => {
+    setUserInput((prevState) => {
+       return { ...prevState, enteredTitle: event.target.value };
+    });
+}
+```
+
 ### Continued Development
 
 This section will outline areas that I want to continue focusing on in future projects.
