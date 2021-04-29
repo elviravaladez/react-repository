@@ -19,17 +19,18 @@ This is a repository to document my progress learning React.
 Be able to dive in and learn React.js, Hooks, Redux, React Routing, Animations, Next.js, and more.
 
 ### Topics
-* React Basics
-* Debugging
-* Components
-* Styling Components
-* HTTP Requests
-* Routing
-* Forms & Validation
-* Redux
-* Authentication
-* Testing (intro)
-* Deployment
+
+- [ ] React Basics
+- [ ] Debugging
+- [ ] Components
+- [ ] Styling Components
+- [ ] HTTP Requests
+- [ ] Routing
+- [ ] Forms & Validation
+- [ ] Redux
+- [ ] Authentication
+- [ ] Testing (intro)
+- [ ] Deployment
 
 ## My Process
 
