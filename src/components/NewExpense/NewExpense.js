@@ -9,7 +9,7 @@ const NewExpense = (props) => {
             ...enteredExpenseData, //passing this data from the ExpenseForm.js file
             id: Math.random().toString()
         };
-        props.onAddExpense(expenseData);
+        props.onAddExpense(expenseData); //when we pass this expenseData to onAddExpense, we are lifting it up to the App.js component
     }
 
     return <div className="new-expense">
