@@ -20,9 +20,9 @@ Be able to dive in and learn React.js, Hooks, Redux, React Routing, Animations, 
 
 ### Topics
 
-- [ ] React Basics
+- [x] React Basics
 - [ ] Debugging
-- [ ] Components
+- [x] Components
 - [ ] Styling Components
 - [ ] HTTP Requests
 - [ ] Routing
@@ -552,6 +552,12 @@ const ExpenseForm = () => {
     );
 };
 ```
+
+#### Lifting State Up
+
+In React, "lifting state up" refers to moving data from a child component to a parent component in order to use it within the parent component OR to pass it down to a different child component.
+
+Note: It's not always the root component (known as `App.js` in this repo) where you want to lift state up to. The goal is to lift the state up just as high as necessary in the component tree until you have a component that has access to components that generate data and components that need data.
 
 ### Continued Development
 
