@@ -615,6 +615,27 @@ Note: It's not always the root component (known as `App.js` in this repo) where 
 
 ---
 
+
+#### Stateful & Stateless Components
+
+- Stateful Components
+  - Components WITH state
+  - Used when you want to add a functionality
+  - Keeps track of changing data via the state object
+  - Also known as "class-based" or "container" or "smart" components
+- Stateless Components
+  - Components WITHOUT state
+  - No functionality  
+  - Used to display something on the page
+    - Display what is given to them via props, or they always render the same thing
+  - Also known as "function-based" or "presentational" or "dumb" components
+
+Note: It is recommended to keep the number of stateful components to a minimum to avoid over-complexity and reduce debugging time.
+
+#### [Back To Top](#working-with-react)
+
+---
+
 ### Continued Development
 
 This section will outline areas that I want to continue focusing on in future projects.
