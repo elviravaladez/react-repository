@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './ExpenseForm.css'
 
-const ExpenseForm = () => {
+const ExpenseForm = (props) => {
     //Example of Using Multiple States
     const [enteredTitle, setEnteredTitle] = useState('');
     const[enteredAmount, setEnteredAmount] = useState('');
@@ -23,15 +23,15 @@ const ExpenseForm = () => {
         event.preventDefault();
         //prevent the default of the request being sent. Therefore, the page will not reload, b/c we stay on the currently loaded page w/out sending any requests anywhere and can continue handling this with JS
 
+        //passing this data to NewExpense.js saveExpenseDataHandler function
         const expenseData = {
             title: enteredTitle,
             amount: enteredAmount,
             date: new Date(enteredDate)
         };
 
-        console.log(expenseData);
+        props.onSaveExpenseData(expenseData); //the value that is returned will be received as a parameter in the NewExpense.js file for the "saveExpenseDataHandler" function, ie. the parameter "enteredExpenseData"
 
-        //overrides what the user entered after the form is submitted and clears the input
         setEnteredTitle('');
         setEnteredAmount('');
         setEnteredDate('');

@@ -30,6 +30,12 @@ const App = props => {
         },
     ];
 
+    //data from the NewExpense.js file
+    const addExpenseHandler = expense => {
+        console.log('In App.js');
+        console.log(expense);
+    }
+
     // //What the code looks like without the JSX code
     // return React.createElement(
     //     'div',
@@ -45,7 +51,7 @@ const App = props => {
 
     return (
         <div>
-            <NewExpense />
+            <NewExpense onAddExpense={addExpenseHandler} />
             <Expenses items={expenses} />
         </div>
     );
