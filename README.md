@@ -55,6 +55,10 @@ Be able to dive in and learn React.js, Hooks, Redux, React Routing, Animations, 
 * Multi-page Page
     * Content is rendered on Server
 
+#### [Back To Top](#working-with-react)
+
+---
+
 #### Components
 
 Today I learned how to set up a React Application in IntelliJ and learned how to create components using React.
@@ -114,6 +118,10 @@ public class HelloNameController {
 }
 ```
 
+#### [Back To Top](#working-with-react)
+
+---
+
 #### React & Components
 
 Today I learned that components in React are great because:
@@ -160,6 +168,9 @@ function ValidCode() {
 }
 ```
 
+#### [Back To Top](#working-with-react)
+
+---
 #### Composition ("children props")
 
 Composition refers to building a user interface from smaller building blocks.
@@ -227,6 +238,11 @@ methods that call on the React object.
 import React from 'react';
 ```
 
+#### [Back To Top](#working-with-react)
+
+---
+
+
 #### State
 
 By default, regular variables in component functions do not cause the function to re-evaluate. To have a component
@@ -235,6 +251,10 @@ function to re-evaluate/run again, you need to import the following:
 ```js
 import React, {nameOfReactHookFromReactLibrary} from 'react';
 ```
+
+#### [Back To Top](#working-with-react)
+
+---
 
 #### Hooks
 
@@ -282,6 +302,10 @@ const HelloExample = (props) => {
 }
 ```
 
+#### [Back To Top](#working-with-react)
+
+---
+
 #### "useState" Hook
 
 `useState()` always returns an array with TWO elements. The first element is ALWAYS the current state value and the
@@ -306,6 +330,10 @@ const clickHandler = () => {
 Whenever state changes with `useState()`, it is only the component function, and that SPECIFIC INSTANCE where the
 component is being used where React will re-evaluate. In other words, state is separated on a per component instance
 basis.
+
+#### [Back To Top](#working-with-react)
+
+---
 
 #### Using `const` when using `useState()`
 
@@ -358,6 +386,10 @@ const ExpenseItem = props => {
 export default ExpenseItem;
 ```
 
+#### [Back To Top](#working-with-react)
+
+---
+
 #### State
 
 React keeps track of when you call `useState()` in a given component instance for the first time. When
@@ -373,6 +405,10 @@ previously initialized and will update with the updated state value.
 
 The initial value is ONLY considered when the component function is executed the FIRST TIME, for a given component
 instance.
+
+#### [Back To Top](#working-with-react)
+
+---
 
 #### State in Simplified Terms
 
@@ -417,6 +453,10 @@ const ExpenseItem = props => {
 export default ExpenseItem;
 ```
 
+#### [Back To Top](#working-with-react)
+
+---
+
 #### Listening to User Input
 
 By default, whenever you listen to the change event for an input, if you read the value of that input element, it will
@@ -443,6 +483,10 @@ const dateChangeHandler = (event) => {
 ```
 
 Note: It's okay to have multiple states per component.
+
+#### [Back To Top](#working-with-react)
+
+---
 
 #### Using One State Instead of Multiple
 
@@ -483,6 +527,10 @@ const titleChangeHandler = (event) => {
     });
 }
 ```
+
+#### [Back To Top](#working-with-react)
+
+---
 
 #### Two-Way Binding
 
@@ -553,16 +601,32 @@ const ExpenseForm = () => {
 };
 ```
 
+#### [Back To Top](#working-with-react)
+
+---
+
 #### Lifting State Up
 
 In React, "lifting state up" refers to moving data from a child component to a parent component in order to use it within the parent component OR to pass it down to a different child component.
 
 Note: It's not always the root component (known as `App.js` in this repo) where you want to lift state up to. The goal is to lift the state up just as high as necessary in the component tree until you have a component that has access to components that generate data and components that need data.
 
+#### [Back To Top](#working-with-react)
+
+---
+
 ### Continued Development
 
 This section will outline areas that I want to continue focusing on in future projects.
 
+#### [Back To Top](#working-with-react)
+
+---
+
 ## Author
 
-[Elvira Valadez](https://github.com/elviravaladez)
+### [Elvira Valadez](https://github.com/elviravaladez)
+
+---
+
+#### [Back To The Top](#working-with-react)
